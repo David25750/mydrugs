@@ -1,0 +1,49 @@
+@import "../../../styles/settings.scss";
+
+.AppBar {
+  background: $base-color;
+}
+.toolbar {
+  justify-content: space-between;
+}
+
+.logo {
+  height: 65px;
+}
+
+.login {
+  text-decoration: none;
+  color: $text-color-light;
+  font-family: $text-font;
+}
+.brand {
+  font-family: $logo-font;
+  text-align: center;
+}
+.menuButton {
+  margin-right: 1rem;
+}
+@media (max-width: 768px) {
+  .brand {
+    font-size: 15px;
+    margin-right: 485px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .brand {
+    font-size: 35px;
+    margin-right: 400px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .brand {
+      font-size: 45px;
+      margin-right: 550px;
+    }
+  }
+}

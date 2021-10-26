@@ -1,0 +1,144 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  .Box {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    border: 10px solid #247ba0;
+    &:hover .imageButton {
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out;
+      -webkit-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+
+    &:hover .textButton {
+      border: 5px solid $text-color-light;
+      transition: all 0.5s ease-in-out;
+      border-color: #ff1654;
+    }
+  }
+
+  .firstLink {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .imageButton {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .textButton {
+    padding: 1rem;
+    position: absolute;
+    text-decoration: none;
+    color: $text-color-light;
+    font-family: $logo-font;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-right: 1rem;
+    border: 2px solid transparent;
+    &:hover {
+      background-color: transparentize($color: $text-color-dark, $amount: 0.1);
+      -webkit-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+  }
+
+  .link {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  .link2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .textButton {
+    font-size: 25px !important;
+    left: 25px;
+    text-align: center;
+    margin-top: 110px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .textButton {
+    font-size: 30px;
+    left: 25px;
+    text-align: center;
+    margin-top: 110px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .textButton {
+    font-size: 30px;
+    left: 125px;
+    text-align: center;
+    margin-top: 110px !important;
+  }
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

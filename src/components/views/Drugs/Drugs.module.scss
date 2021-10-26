@@ -1,0 +1,99 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  margin-top: 192px;
+  margin-bottom: -550px;
+
+  span {
+    color: white;
+  }
+
+  .divider {
+    margin: 9rem;
+    margin-bottom: -10px;
+    background-color: $base-color;
+    border-radius: 50%;
+    height: 3px;
+  }
+
+  legend {
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-family: $text-font;
+    font-weight: 600;
+
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    margin: 2rem;
+  }
+  h1 {
+    font-family: $header-font;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem;
+  }
+  .select {
+    width: 90%;
+    margin: 2rem;
+    color: white;
+    font-family: $text-font;
+  }
+  .radio:hover {
+    background-color: inherit;
+    color: $text-color-light;
+  }
+  .button {
+    text-transform: uppercase;
+    background: #4682b4;
+    padding: 20px;
+    border: 4px solid #20bf6b;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    width: 65%;
+    &:hover {
+      color: yellowgreen;
+      border-radius: 50px;
+      background: yellowgreen;
+      border-color: #494949;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    margin-top: 0px;
+  }
+
+  .button {
+    margin: 1rem;
+    margin-left: 70px;
+    margin-bottom: 30px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .root {
+    margin-top: 150px;
+  }
+
+  body {
+    background: black;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .root {
+    margin-top: 150px;
+  }
+}

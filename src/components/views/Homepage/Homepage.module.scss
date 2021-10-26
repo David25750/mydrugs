@@ -1,0 +1,101 @@
+@import "../../../styles/settings.scss";
+
+.root {
+  margin-top: 84px;
+
+  .leftImage {
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    margin-right: 2px;
+  }
+
+  .logo {
+    height: 715px;
+    top: 55px;
+    margin-top: -205px;
+  }
+
+  .divider {
+    margin: 3rem;
+    background-color: $base-color;
+    border-radius: 50%;
+    height: 2px;
+  }
+
+  .TextBox {
+    position: relative;
+    height: 610px;
+    border-radius: 20%;
+    .image {
+      position: absolute;
+      border-radius: 5%;
+      height: 100%;
+      width: 100%;
+      opacity: 0.2;
+      &:hover {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+      }
+    }
+
+
+    &:hover .Maintext {
+      color: $text-color-light;
+      transition: all 1s ease-in-out;
+    }
+    &:hover .Subtext {
+      color: $text-color-light;
+      transition: all 1s ease-in-out;
+    }
+    .Maintext {
+      font-family: $logo-font;
+      font-weight: bolder;
+      font-size: 44px;
+      color: $text-color-dark;
+      margin-top: 150px;
+      text-align: center;
+      opacity: 1;
+      text-decoration: none;
+      .heart {
+        font-size: 35px;
+        color: coral;
+      }
+    }
+    .Subtext {
+      font-family: $logo-font;
+      font-weight: normal;
+      font-size: 35px;
+      color: $text-color-dark;
+      text-align: center;
+    }
+    .Gift {
+      font-size: 45px;
+      text-align: center;
+    }
+  }
+  .Box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .TextBox {
+      height: 400px;
+
+      .Maintext {
+        font-size: 30px;
+      }
+      .Subtext {
+        font-size: 20px;
+      }
+      .logo{
+        width: 252px;
+        height: 252px;
+        margin-top: -94px;
+      }
+    }
+  }
+}

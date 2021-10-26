@@ -1,0 +1,25 @@
+// $base-size: 12px;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+$base-color: #4682B4;
+$text-color-dark: #363636;
+$text-color-light: #F5EDDA;
+$background-color: #0b86b3;
+
+$logo-font: 'Press Start 2P', cursive;
+$text-font: 'Gloria Hallelujah', sans-serif;
+$header-font: 'Raleway', sans-serif;
+
+$color-success: #8bc34a;
+$color-danger: #a72456;
+
+@keyframes viewsFromRight {
+    0% {
+      margin-left: 150px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
